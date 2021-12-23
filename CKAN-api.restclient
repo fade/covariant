@@ -1,0 +1,23 @@
+# CKAN Data API
+
+# Access resource data via a web API with powerful query support. Further information in the main CKAN Data API and DataStore documentation.
+# Endpoints »
+
+# The Data API can be accessed via the following actions of the CKAN action API.
+# Create 	https://data.ontario.ca/en/api/3/action/datastore_create
+# Update / Insert 	https://data.ontario.ca/en/api/3/action/datastore_upsert
+# Query 	https://data.ontario.ca/en/api/3/action/datastore_search
+# Query (via SQL) 	https://data.ontario.ca/en/api/3/action/datastore_search_sql
+# Querying »
+# Query example (first 5 results)
+
+# https://data.ontario.ca/en/api/3/action/datastore_search?resource_id=8a88fe6d-d8fb-41a3-9d04-f0550a44999f&limit=5
+# Query example (results containing 'jones')
+
+# https://data.ontario.ca/en/api/3/action/datastore_search?q=jones&resource_id=8a88fe6d-d8fb-41a3-9d04-f0550a44999f
+# Query example (via SQL statement)
+
+# https://data.ontario.ca/en/api/3/action/datastore_search_sql?sql=SELECT * from "8a88fe6d-d8fb-41a3-9d04-f0550a44999f" WHERE title LIKE 'jones'
+# Example: Javascript » 
+
+GET https://data.ontario.ca/dataset/f4f86e54-872d-43f8-8a86-3892fd3cb5e6/resource/8a88fe6d-d8fb-41a3-9d04-f0550a44999f/download/daily_change_in_cases_by_phu.csv
