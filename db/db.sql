@@ -27,5 +27,6 @@ CREATE TABLE IF NOT EXISTS daily-dooms (
     phu INTEGER NOT NULL,
     dt TIMESTAMP WITHOUT TIME ZONE NOT NULL,
     today NUMERIC NOT NULL,
-    ttd NUMERIC NOT NULL
+    ttd NUMERIC NOT NULL,
+    CONSTRAINT fk_phu FOREIGN KEY(phu) REFERENCES  public_health_unit(id)
 );
