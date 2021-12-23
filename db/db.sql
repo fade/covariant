@@ -29,17 +29,3 @@ CREATE TABLE IF NOT EXISTS daily-dooms (
     today NUMERIC NOT NULL,
     ttd NUMERIC NOT NULL
 );
--- name: create-tick-data-table
--- Create the table to hold the tick data for a given issue.
--- CREATE TABLE IF NOT EXISTS tick_data
--- (
---   id SERIAL PRIMARY KEY,
---   dt TIMESTAMP WITHOUT TIME ZONE NOT NULL,
---   stock_id INTEGER NOT NULL,
---   open NUMERIC NOT NULL,
---   high NUMERIC NOT NULL,
---   low NUMERIC NOT NULL,
---   close NUMERIC NOT NULL,
---   volume NUMERIC NOT NULL,
---   CONSTRAINT fk_stock FOREIGN KEY(stock_id) REFERENCES stock(id)
--- );
