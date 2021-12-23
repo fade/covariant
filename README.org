@@ -1,9 +1,9 @@
 * Deaths per 100,000
 
-16:36 <@Tuxedo> What I do is, I look up the population for the area in question and then work it out.
-16:36 <@Tuxedo> So for instance, Mississauga's putative population is 828,854.
-16:36 <@Tuxedo> So if X is the case count in question, then X / (828,854 / 100,000) is the count per 100K.
-16:37 <@Tuxedo> Or X * (100,000 / 828,854) if you like that better.
-16:38 <@Tuxedo> It's just a way of being able to compare counts between different reporting regions to see how bad it is.
+1.  What I do is, I look up the population for the area in question and then work it out.
+2. So for instance, Mississauga's putative population is 828,854.
+3. So if X is the case count in question, then X / (828,854 / 100,000) is the count per 100K.
+4. Or X * (100,000 / 828,854) if you like that better.
+5. It's just a way of being able to compare counts between different reporting regions to see how bad it is.
 
 
