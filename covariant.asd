@@ -8,14 +8,19 @@
   :serial t
   :depends-on (#:rutils
                #:cl-ppcre
+               #:postmodern
+               #:cl-csv
+               #:vellum
+               #:vellum-csv
+               #:vellum-postmodern
                #:dexador
                #:jonathan
                #:quri
                #:cl-strings
-               #:cl-interpol
-               )
+               #:local-time
+               #:net-telent-date
+               #:cl-interpol)
   :pathname "./"
   :components ((:file "app-utils")
-               (:file "covariant")
-               ))
+               (:file "covariant")))
 
