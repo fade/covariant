@@ -1,11 +1,5 @@
 
--- name: create-sars-cov2-table
--- Create the table to hold pandemic data.
-CREATE TABLE IF NOT EXISTS sars_cov2 (
-    id SERIAL PRIMARY KEY,
-    dt TIMESTAMP WITHOUT TIME ZONE NOT NULL,
-    
-);
+-- Create the database to hold pandemic data.
 
 -- name: create-province-handles
 CREATE TABLE IF NOT EXISTS province (
@@ -22,7 +16,7 @@ CREATE TABLE IF NOT EXISTS public_health_unit (
 );
 
 -- name: create-daily-tally
-CREATE TABLE IF NOT EXISTS daily-dooms (
+CREATE TABLE IF NOT EXISTS daily_dooms (
     id SERIAL PRIMARY KEY,
     phu INTEGER NOT NULL,
     dt TIMESTAMP WITHOUT TIME ZONE NOT NULL,
