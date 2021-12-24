@@ -1,2 +1,4 @@
 /buildapp
 /slime.lisp
+/covariant
+/quicklisp-manifest.txt
